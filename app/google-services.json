@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "458841490301",
+    "project_id": "employeeportal-daffc",
+    "storage_bucket": "employeeportal-daffc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:458841490301:android:9913bac57074ee459ac214",
+        "android_client_info": {
+          "package_name": "com.pmn.employeeportal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "458841490301-8hmao51ect2puqi5jqoat2a65hrph06b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5m2X2KAafNaPekHm3iCIoOZsitz5UQLE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "458841490301-8hmao51ect2puqi5jqoat2a65hrph06b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
