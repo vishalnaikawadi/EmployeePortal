@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EmployeePortal">
         <activity
+            android:name=".home.HomeActivity"
+            android:exported="false" />
+        <activity
             android:name=".auth.LoginActivity"
             android:exported="false" />
         <activity
