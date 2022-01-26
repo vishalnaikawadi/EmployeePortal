@@ -18,6 +18,7 @@ import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.FirebaseAuth;
 import com.pmn.employeeportal.R;
 import com.pmn.employeeportal.home.HomeActivity;
+import com.pmn.employeeportal.utils.RealtimeDBManager;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -105,9 +106,16 @@ public class LoginActivity extends AppCompatActivity {
             progressBar.setVisibility(View.GONE);
             if (task.isSuccessful()) {
 
-                Toast.makeText(this, "Login Success", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(this, HomeActivity.class));
-                finish();
+                if (mAuth.getCurrentUser() != null) {
+
+                    RealtimeDBManager.insertUser(mAuth.getCurrentUser());
+                    Toast.makeText(this, "Login Success", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(this, HomeActivity.class));
+                    finish();
+                } else {
+                    Toast.makeText(this, "Something went wrong", Toast.LENGTH_SHORT).show();
+                }
+
             } else {
                 Toast.makeText(this, "Something went wrong", Toast.LENGTH_SHORT).show();
             }
