@@ -1,5 +1,6 @@
 package com.pmn.employeeportal.home;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,9 +8,18 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
+import com.google.android.material.card.MaterialCardView;
+import com.google.firebase.auth.FirebaseAuth;
 import com.pmn.employeeportal.R;
+import com.pmn.employeeportal.auth.LoginActivity;
+import com.pmn.employeeportal.canteen.CanteenActivity;
+import com.pmn.employeeportal.feedback.FeedbackActivity;
 
 public class MenuFragment extends Fragment {
+
+    private MaterialCardView cvLogOut;
+    private MaterialCardView cvFeedback;
+    private MaterialCardView cvCanteen;
 
 
     public MenuFragment() {
@@ -27,6 +37,26 @@ public class MenuFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_menu, container, false);
+        View view = inflater.inflate(R.layout.fragment_menu, container, false);
+        //bindings
+        cvLogOut = view.findViewById(R.id.cvLogout);
+        cvFeedback = view.findViewById(R.id.cvFeedback);
+        cvCanteen = view.findViewById(R.id.cvCanteen);
+        //click listeners
+        cvLogOut.setOnClickListener(view1 -> {
+            FirebaseAuth.getInstance().signOut();
+            startActivity(new Intent(getActivity(), LoginActivity.class));
+            getActivity().finish();
+        });
+
+        cvFeedback.setOnClickListener(view12 -> {
+            startActivity(new Intent(getActivity(), FeedbackActivity.class));
+        });
+
+        cvCanteen.setOnClickListener(view12 -> {
+            startActivity(new Intent(getActivity(), CanteenActivity.class));
+        });
+
+        return view;
     }
 }

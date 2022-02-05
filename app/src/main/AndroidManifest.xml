@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EmployeePortal">
         <activity
+            android:name=".canteen.CanteenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feedback.FeedbackActivity"
+            android:exported="false" />
+        <activity
             android:name=".home.HomeActivity"
             android:exported="false" />
         <activity
