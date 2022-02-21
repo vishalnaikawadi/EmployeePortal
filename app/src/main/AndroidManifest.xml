@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EmployeePortal">
         <activity
+            android:name=".leave.LeavesActivity"
+            android:exported="false" />
+        <activity
             android:name=".canteen.CanteenActivity"
             android:exported="false" />
         <activity

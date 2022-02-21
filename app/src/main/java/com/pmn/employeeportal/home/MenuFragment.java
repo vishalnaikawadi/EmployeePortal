@@ -14,12 +14,14 @@ import com.pmn.employeeportal.R;
 import com.pmn.employeeportal.auth.LoginActivity;
 import com.pmn.employeeportal.canteen.CanteenActivity;
 import com.pmn.employeeportal.feedback.FeedbackActivity;
+import com.pmn.employeeportal.leave.LeavesActivity;
 
 public class MenuFragment extends Fragment {
 
     private MaterialCardView cvLogOut;
     private MaterialCardView cvFeedback;
     private MaterialCardView cvCanteen;
+    private MaterialCardView cvLeaves;
 
 
     public MenuFragment() {
@@ -42,6 +44,7 @@ public class MenuFragment extends Fragment {
         cvLogOut = view.findViewById(R.id.cvLogout);
         cvFeedback = view.findViewById(R.id.cvFeedback);
         cvCanteen = view.findViewById(R.id.cvCanteen);
+        cvLeaves = view.findViewById(R.id.cvLeaves);
         //click listeners
         cvLogOut.setOnClickListener(view1 -> {
             FirebaseAuth.getInstance().signOut();
@@ -55,6 +58,10 @@ public class MenuFragment extends Fragment {
 
         cvCanteen.setOnClickListener(view12 -> {
             startActivity(new Intent(getActivity(), CanteenActivity.class));
+        });
+
+        cvLeaves.setOnClickListener(view13 -> {
+            startActivity(new Intent(getActivity(), LeavesActivity.class));
         });
 
         return view;
