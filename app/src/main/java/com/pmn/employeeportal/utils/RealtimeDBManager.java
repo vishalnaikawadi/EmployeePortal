@@ -15,6 +15,8 @@ public class RealtimeDBManager {
     public final static String USER_LEAVES = "leaves";
     public final static String LEAVES = "leaves";
     public final static String CANTEEN = "canteen";
+    public final static String ATTENDANCE = "attendance";
+    public final static String PERFORMANCE = "performance";
 
     public static final DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference();
 
