@@ -23,7 +23,7 @@ public class RealtimeDBManager {
     public static void insertUser(FirebaseUser firebaseUser) {
 
         User user = new User("", firebaseUser.getEmail(), "", "");
-        mDatabase.child(USERS).child(firebaseUser.getUid()).setValue(user);
+        mDatabase.child(USERS).child(firebaseUser.getUid()).push().setValue(user);
     }
 
     public static void insertFeedBack(FeedbackModel feedbackModel) {

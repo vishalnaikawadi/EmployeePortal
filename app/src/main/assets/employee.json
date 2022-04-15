@@ -1,0 +1,145 @@
+{
+  "canteen": {
+    "breakFast": "Coffee, Chai, Omlet bread, Idli Sambar, Vada Sambar",
+    "dinner": "Chicken Tikka Masala, Moong dal halva, Malai Kofta, Veg Thali",
+    "lunch": "Murgh Musallam, Chicken Chilli Fried, Butter Chicken, Boneless Butter Chicken"
+  },
+  "feedback": {
+    "Issue with Attendance": {
+      "m4vOV4KDmmT9HTcVBzxdxiDYRMp1": {
+        "comment": "zbzbs",
+        "reason": "Issue with Attendance",
+        "userEmail": "pratiknaikawadi@mycompany.com",
+        "userId": "m4vOV4KDmmT9HTcVBzxdxiDYRMp1"
+      }
+    },
+    "Issue with Leaves": {
+      "m4vOV4KDmmT9HTcVBzxdxiDYRMp1": {
+        "comment": "cant apply for leaves",
+        "reason": "Issue with Leaves",
+        "userEmail": "pratiknaikawadi@mycompany.com",
+        "userId": "m4vOV4KDmmT9HTcVBzxdxiDYRMp1"
+      }
+    },
+    "Other": {
+      "m4vOV4KDmmT9HTcVBzxdxiDYRMp1": {
+        "comment": "abcd",
+        "reason": "Other",
+        "userEmail": "pratiknaikawadi@mycompany.com",
+        "userId": "m4vOV4KDmmT9HTcVBzxdxiDYRMp1"
+      }
+    },
+    "Showing wrong performance analysis": {
+      "m4vOV4KDmmT9HTcVBzxdxiDYRMp1": {
+        "comment": "sheh",
+        "reason": "Showing wrong performance analysis",
+        "userEmail": "pratiknaikawadi@mycompany.com",
+        "userId": "m4vOV4KDmmT9HTcVBzxdxiDYRMp1"
+      }
+    }
+  },
+  "feeds": {
+    "birthdays": [
+      {
+        "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg",
+        "name": "Andrew"
+      }
+    ],
+    "events": [
+      {
+        "bgImage": "https://i.pinimg.com/originals/cc/f0/f7/ccf0f75595cafc6571a034d301d832de.jpg",
+        "description": "Let's build it together on this coming saturday",
+        "eventDateTime": "15/02/2022 18:00:00",
+        "location": "Bandra Office",
+        "title": "Workshop!!"
+      }
+    ],
+    "newJoinees": [
+      {
+        "department": "Data",
+        "designation": "LeadAnalyst",
+        "name": "Andrew Maxwell",
+        "userImage": "https://st.depositphotos.com/2309453/3449/i/600/depositphotos_34490345-stock-photo-confident-casual-unshaven-young-man.jpg"
+      }
+    ],
+    "notices": [
+      {
+        "description": "long desc",
+        "image": "https://image.shutterstock.com/image-vector/vector-caution-sign-text-attention-260nw-1383217706.jpg",
+        "title": "lorem ipsum"
+      },
+      {
+        "description": "long desc",
+        "title": "lorem ipsum"
+      }
+    ]
+  },
+  "leaves": {
+    "1650003811674": {
+      "fromDate": "16/04/2022",
+      "id": "1650003811674",
+      "reason": "emergency leave",
+      "remark": "enjoy your leave",
+      "status": "DECLINED",
+      "toDate": "17/04/2022",
+      "userEmail": "pratiknaikawadi@mycompany.com"
+    },
+    "1650003900541": {
+      "fromDate": "16/04/2022",
+      "id": "1650003900541",
+      "reason": "emergency leave",
+      "remark": "",
+      "status": "UNAPPROVED",
+      "toDate": "17/04/2022",
+      "userEmail": "pratiknaikawadi@mycompany.com"
+    },
+    "1650003905146": {
+      "fromDate": "16/04/2022",
+      "id": "1650003905146",
+      "reason": "emergency leave",
+      "remark": "",
+      "status": "UNAPPROVED",
+      "toDate": "17/04/2022",
+      "userEmail": "pratiknaikawadi@mycompany.com"
+    }
+  },
+  "users": {
+    "m4vOV4KDmmT9HTcVBzxdxiDYRMp1": {
+      "-N-hcvyVvfABxTwUQV_0": {
+        "userEmail": "pratiknaikawadi@mycompany.com",
+        "userName": "",
+        "userPhone": "",
+        "userProfile": ""
+      },
+      "attendance": {
+        "absent": [
+          "2022-04-02",
+          "2022-04-03"
+        ],
+        "present": [
+          "2022-04-01",
+          "2022-04-04",
+          "2022-04-05",
+          "2022-04-06",
+          "2022-04-07",
+          "2022-04-08"
+        ]
+      },
+      "performance": {
+        "consistency": 100,
+        "integrity": 400,
+        "productivity": 200
+      },
+      "userEmail": "pratiknaikawadi@mycompany.com",
+      "userName": "",
+      "userPhone": "",
+      "userProfile": ""
+    },
+    "qV4MWuCfrEM6BvQSsKCdNiI8VM32": {
+      "userEmail": "pnaikawadi333@csfc.com",
+      "userName": "",
+      "userPhone": "",
+      "userProfile": ""
+    }
+  }
+}
